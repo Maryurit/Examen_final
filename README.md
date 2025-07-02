@@ -1,12 +1,44 @@
-# React + Vite
+Proyecto ´Rick and Morty
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicacion que permite visualizar lso personajes de Rick and Morty con sus respectivos nombres
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visualización de tarjetas (`CardList`) con imagen, nombre y detalles según la API.
+- Manejo de estado global con Zustand.
+- Estilos responsivos con Bootstrap.
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚛️ React
+- 🟨 Zustand (estado global)
+- 📦 Vite (entorno de desarrollo)
+- 🎨 Bootstrap
+- 🌐 Fetch API
+
+## Estructura del proyecto
+
+src/
+├── components/
+│   ├── Card.jsx
+│   └── CardList.jsx
+├── layout/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   └── Layout.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── ItemList.jsx
+│   └── Contact.jsx
+├── store/
+│   └── useItemStore.js
+├── App.jsx
+└── main.jsx
+
+Pasos para usar:
+1. git clone https://github.com/Maryurit/Examen_final 
+2. npm install
+3. npm install axios zustand bootstrap react-bootstrap
+4. npm install react react-dom
+5. npm install react-router-dom
+6. npm run dev
